@@ -5,15 +5,15 @@ export default function Nav({ links }) {
   const { pathname } = location;
 
   return (
-    <nav>
-      <header>
+    <nav id="nav">
+      <header id="header">
         <Link to='./' className={pathname == "/" ? 'nav-white' : 'nav-black'} id="nav-header">
           <div id="nav-name">
             Firstname Lastname
           </div>
-          <div id="nav-title">
+          {/* <div id="nav-title">
             title/title
-          </div>
+          </div> */}
         </Link>
       </header>
       <div id="nav-items">

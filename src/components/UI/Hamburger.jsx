@@ -1,16 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import hamburgerMenu from '../../assets/hamburger-menu.svg';
+import exitMenu from '../../assets/x.svg';
 
 export default function Hamburger() {
   return(
     <div>
       <div id="hamburger-icon">
         <div id="open">
-          <FontAwesomeIcon icon={faBars} />
+          <img src={hamburgerMenu} alt="hamburger menu" />
         </div>
         <div id="close">
-          <FontAwesomeIcon icon={faXmark} />
+          <img src={exitMenu} alt="exit menu" />
         </div>  
       </div>
     </div>
