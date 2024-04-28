@@ -1,27 +1,24 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 import './Navigation.css'
 
 export default function Navigation() {
-  const location = useLocation();
-  const { pathname } = location;
-
   return (
     <Navbar
       links={[
-        <Link key={1} to='./about' className={pathname == "/about" ? 'selected-nav' : ''}>
+        <Link key={1} to='./about'>
           About
         </Link>,
-        <Link key={2} to='./reel' className={pathname == "/reel" ? 'selected-nav' : ''}>
+        <Link key={2} to='./reel'>
           Reel
         </Link>,
-        <Link key={3} to='./resume' className={pathname == "/resume" ? 'selected-nav' : ''}>
+        <Link key={3} to='./resume'>
           Resume
         </Link>,
-        <Link key={4} to='./headshots' className={pathname == "/headshots" ? 'selected-nav' : ''}>
+        <Link key={4} to='./headshots'>
           Headshots
         </Link>,
-        <Link key={5} to='./contact' className={pathname == "/contact" ? 'selected-nav' : ''}>
+        <Link key={5} to='./contact'>
           Contact
         </Link>
       ]}
