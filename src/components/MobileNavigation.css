@@ -1,50 +1,31 @@
-#hamburger-wrapper {
-  display: block;
-}
-
-#hamburger-icon {
-  display: flex;
-  padding-top: 30px;
-  margin-right: 10px;
+#hamburger-icon,
+#exit-icon {
   width: 2rem;
-  height: 2rem;
-  font-size: 150%;
-  position: relative;
-  justify-content: space-around;
-  flex-flow: column nowrap;
-  z-index: 10;  
 }
 
-#close {
-  display: none;
-}
-
-#m-nav {
+#m-nav-closed,
+#m-nav-opened-header {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  align-items: baseline;
-  position: absolute;
-  padding: 0px;
-  z-index: 2;
+  align-items: center;
+  padding: 0px 20px;
+  height: 7vh;
 }
 
 #m-nav-header {
-  z-index: 2;
-  padding-top: 20px;
-  display: block;
-  position: relative;
-  padding-left: 15px;
+  display: inline-block;
   text-decoration: unset;
   color: black;
 }
 
-#m-nav-items {
+#m-nav-opened {
+  z-index: 2;
   display: none;
   position: absolute;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   width: 100%;
+  background: #eeeeee;
 }
 
 .slide-in {
@@ -80,28 +61,16 @@
   left: -100;
 }
 
-/* .nav-open {
-  transition: 0.5s;
-  color: white!important;
-  text-shadow: unset!important;
-} */
-
 #m-nav-name {
   font-size: 150%;
   font-weight: 100;
 }
 
-/* #m-nav-title {
-  font-style: italic;
-} */
-
 #m-nav-pages {
-  background: #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  padding: 5px;
+  height: 93vh;
   font-size: 150%;
   font-weight: 100;
 }

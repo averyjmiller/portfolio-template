@@ -2,9 +2,9 @@
   display: flex;
   padding: 20px 50px;
   width: 100%;
+  height: 7vh;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   background-color: #eeeeee;
   z-index: 2;
 }
@@ -17,26 +17,10 @@
   color: black;
 }
 
-/* .nav-white {
-  transition: 0.5s;
-  color: white;
-  text-shadow: 3px 2px 20px black;
-}
-
-.nav-black {
-  transition: 0.5s;
-  color: #546b60;
-  text-shadow: unset;
-} */
-
 #nav-name {
   font-size: 150%;
   font-weight: 100;
 }
-
-/* #nav-title {
-  font-style: italic;
-} */
 
 #nav-pages {
   padding: 5px 0px;
@@ -56,7 +40,3 @@
 #nav-pages *:hover {
   transform: scale(1.2);
 }
-
-/* .selected-nav {
-  transform: scale(1.3);
-} */
